@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+	padding:0;
+	font-family: arial;
+	background: #000;
+	font-size: 14px;
+}
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+.login {
+	width: 500px;
+	background: #f3f3f3;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	padding: 15px;
+}
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 40px;
+	color: #333;
+	margin: 0;
+	padding:0;
+	text-align: left;
+}
+.acces {
+	text-align: left;
+}
+.champ {
+	width: 400px;
+	height: 30px;
+	border: 1px solid #c3c3c3;
+	padding: 15px;
+	border-radius: 5px;
+	background: #e4e4e4;
+}
+.champ:hover {
+	background: #fff;
+	border: 1px solid #000;
+}
+.loginbottom {
+	background: #d3dfdf;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	border-radius: 5px;
+}
+.bt {
+	background: #000;
+	color: #fff;
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+	outline:none;
+}
+.bt:hover {
+	background: #a00;
+	transition: 0.5s;
+}
+.msg {
+	color: red;
+}
+a {
+	color: #06F;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+	.login, .champ {
+		width: 80%;
+	}
+}

@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box !important;
+}
+
+html, body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative;
+}
+
+#audio {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+embed {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.title-3 {
+  font-size: 4.2em;
+  font-family: rocket;
+  font-weight: 900;
+  color: #000;
+  background-color: #dbdbdb;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto !important;
+}
+
+@font-face {
+  font-family: "go";
+  src: url("src/assets/fonts/go around the books.ttf");
+}
+@font-face {
+  font-family: "pl";
+  src: url("src/assets/fonts/Plateia Bold.ttf");
+}
+@font-face {
+  font-family: "rocket";
+  src: url("src/assets/fonts/ROCKET WILDNESS.ttf");
+}

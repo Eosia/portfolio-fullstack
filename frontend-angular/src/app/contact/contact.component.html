@@ -1,0 +1,87 @@
+    <!--titre 3 section start-->
+    <h3 class="title-3" id="accueil">Me contacter</h3>
+    <!--titre 3 section end-->
+
+    <!--section start-->
+    <section class="section-contact container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+
+        <!--formulaire de contact start-->
+        <div id="contact">
+            <h4>Formulaire de contact</h4>
+
+            <form (ngSubmit)="postContactForm()" *ngIf="!contactSuccess">
+              <div class="input-1-2">
+                  <label for="name">NOM <span class="required">*</span></label><br>
+                  <input type="text" name="name" id="name" [ngClass]="{'is-invalid': this.contactMessage.name && !isNameValid()}" placeholder="Nom" [(ngModel)]="contactMessage.name">
+              </div>
+              <div class="input-1-2 last">
+                  <label for="email">EMAIL <span class="required">*</span></label><br>
+                  <input type="email" name="email" id="email" [ngClass]="{'is-invalid': this.contactMessage.email && !isEmailValid()}" placeholder="Email" [(ngModel)]="contactMessage.email">
+              </div>
+              <div class="clear"></div>
+              <label for="message">MESSAGE <span class="required">*</span></label><br>
+              <textarea name="message" id="message" [ngClass]="{'is-invalid': this.contactMessage.message && !isMessageValid()}" placeholder="Message" [(ngModel)]="contactMessage.message"></textarea><br>
+              <button class="form-button" [disabled]="!isEmailValid() || !isNameValid() || !isMessageValid()">Envoyer</button>
+          </form>
+          <p class="thanks" *ngIf="contactSuccess">Votre message a bien été envoyé !</p>
+
+    </div>
+    <!--formulaire de contact end-->
+
+    <!--réseaux sociaux start-->
+    <div class="social container-fluid col-12 col-sm-12 col-md-10 col-lg-12 col-xl-12">
+
+        <!--facebook start-->
+        <div class="bloc col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" data-toggle="tooltip" data-html="bottom" title="KevinW sur Facebook">
+            <figure>
+                <a href="https://www.facebook.com/kevin.wiart.378" target="_blank">
+                    <img src="assets/img/128/facebook.png" alt="facebook kevinw">
+                </a>
+                <figcaption class="hidden">facebook kevinw</figcaption>
+            </figure>
+            <legend class="hidden">facebook kevinw</legend>
+        </div>
+        <!--facebook end-->
+
+        <!--twitter start-->
+        <div class="bloc col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" data-toggle="tooltip" data-html="bottom" title="KevinW sur Twitter">
+            <figure>
+                <a href="https://twitter.com/KevinW_DevWeb" target="_blank">
+                    <img src="assets/img/128/twitter.png" alt="twitter kevinw">
+                </a>
+                <figcaption class="hidden">twitter kevinw</figcaption>
+            </figure>
+            <legend class="hidden">twitter kevinw</legend>
+        </div>
+        <!--twitter end-->
+
+        <!--github start-->
+        <div class="bloc col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"  data-toggle="tooltip" data-html="bottom" title="KevinW sur Github">
+            <figure>
+                <a href="https://github.com/Eosia" target="_blank">
+                    <img src="assets/img/128/github.png" alt="github kevinw">
+                </a>
+                <figcaption class="hidden">github kevinw</figcaption>
+            </figure>
+            <legend class="hidden">github kevinw</legend>
+        </div>
+        <!--github end-->
+
+        <!--mail start-->
+        <div class="bloc col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" data-toggle="tooltip" data-html="bottom" title="CONTACT@KEVINW.BE">
+            <figure>
+                <a href="mailto:contact@kevinw.be" target="_blank">
+                    <img src="assets/img/128/mail.png" alt="mail kevinw">
+                </a>
+                <figcaption class="hidden">mail kevinw</figcaption>
+            </figure>
+            <legend class="hidden">mail kevinw</legend>
+        </div>
+        <!--mail end-->
+
+    </div>
+        <!--réseaux sociaux end-->
+
+    </section>
+    <!--section end-->

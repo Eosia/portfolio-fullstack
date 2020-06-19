@@ -1,0 +1,94 @@
+header {
+  background-image: url("/assets/img/header.jpg");
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+header div nav {
+  margin: auto;
+}
+header div nav ul {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+header div nav ul li {
+  margin: auto;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-family: "pl";
+  font-weight: 900;
+  text-align: center;
+  height: auto;
+}
+header div nav ul li a {
+  color: white;
+}
+header div nav ul li a:hover {
+  transform: scale(1.1);
+  border-bottom: 3px solid #6f97fc;
+  text-align: center !important;
+}
+header .title-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  margin: 20vh auto;
+  text-align: center;
+  width: 40%;
+}
+header .title-header h1 {
+  font-size: 4.2em;
+  font-family: "rocket";
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  height: auto;
+  margin: auto;
+  width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+header .title-header figure {
+  text-align: center;
+  height: auto;
+  margin: auto;
+  width: 20%;
+  height: auto;
+}
+header .title-header figure a {
+  margin: auto;
+}
+header .title-header figure a img {
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+header h2 {
+  width: 80%;
+  height: 5vh;
+  margin: 70px auto;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 10px;
+  color: white;
+  text-align: center;
+  font-family: "go";
+}
+header a {
+  width: 20px;
+  height: auto;
+  margin: 10px auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a img {
+  width: 125px;
+  height: auto;
+  margin: auto;
+}

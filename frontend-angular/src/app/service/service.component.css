@@ -1,0 +1,9 @@
+div {
+  background-color: white;
+  color: black;
+}
+
+img {
+  max-height: 100px;
+  width: auto;
+}

@@ -1,0 +1,9 @@
+<div class="full-div" [ngStyle]="{'background-color': order%2 == 0 ? '#fff' : '#cecb92', 'margin-right': order%2 == 0 ? '30px' : '0'}">
+  <div class="real-left">
+      <h4 [ngClass]="{'white-text': order%2 == 0}">{{realisation.titre}}</h4>
+      <p [ngClass]="{'white-text': order%2 == 0}">{{realisation.lien}}</p>
+  </div>
+  <div class="real-right center">
+      <img src="https://kevinw-portfolio.xyz/admin/dashboard/public/images/{{realisation.image}}">
+  </div>
+</div>

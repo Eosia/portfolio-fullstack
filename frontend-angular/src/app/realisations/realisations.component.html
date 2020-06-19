@@ -1,0 +1,7 @@
+<section>
+  <div class="content">
+      <p class="main-p">{{mainParagraphe}}</p>
+      <app-realisation *ngFor="let realisation of realisations; let index = index" [realisation]="realisation" [order]="index"></app-realisation>
+      <div class="clear"></div>
+  </div>
+</section>

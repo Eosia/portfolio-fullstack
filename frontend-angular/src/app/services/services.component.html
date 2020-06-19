@@ -1,0 +1,7 @@
+<section>
+  <div class="content">
+      <p class="main-p">{{mainParagraphe}}</p>
+      <app-service *ngFor="let service of services; let index = index" [service]="service" [order]="index"></app-service>
+      <div class="clear"></div>
+  </div>
+</section>

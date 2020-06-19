@@ -1,0 +1,29 @@
+.full-div {
+  border-radius: 5px;
+  position: relative;
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.real-left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 490px;
+}
+
+.real-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 490px;
+}
+
+img {
+  max-height: 350px;
+  max-width: 350px;
+  width: auto;
+}
