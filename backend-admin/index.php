@@ -22,7 +22,7 @@ if(isset($_POST['login'])) {
 			
 			$donnee = $req->fetch(PDO::FETCH_ASSOC);
             $_SESSION['id'] = $donnee['id'];
-			header('location:https://kevinw-portfolio.xyz/admin/dashboard/realisations');
+			header('location:dashboard/realisations');
 		} else {
 // Si le couple Pseudo/Password N'est PAS trouvé
 			$message = 'Accès refusé !';

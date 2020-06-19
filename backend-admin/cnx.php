@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:host=localhost;dbname=keviqffq_realisations;charset=utf8';
-$user = 'keviqffq_kevin';
-$pass = 'kevinportfolio';
+$dsn = 'mysql:host=localhost;dbname=mydb;charset=utf8';
+$user = 'login';
+$pass = 'password';
 try {
 	$cnx = new PDO($dsn,$user,$pass);
 } catch(PDOException $e) {

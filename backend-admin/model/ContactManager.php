@@ -4,7 +4,7 @@ require_once('model/ContactMessage.php');
 class ContactManager {
 
     public function getConnection(): PDO{
-        $db = new PDO("mysql:host=localhost;dbname=keviqffq_realisations;charset=utf8","keviqffq_kevin","kevinportfolio");
+        $db = new PDO("mysql:host=localhost;dbname=mydb;charset=utf8","login","password");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         return $db;
